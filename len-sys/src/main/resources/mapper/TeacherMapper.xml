@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.len.mapper.TeacherMapper">
+
+  <select id="queryTeacher" resultType="com.len.entity.Teacher">
+      SELECT teac_id teacId, teac_name teacName, teac_age teacAge, teac_sex teacSex, teac_bir teacBir, teac_jineng teacJineng FROM t_teacher
+  </select>
+
+</mapper>
